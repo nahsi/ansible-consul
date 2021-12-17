@@ -86,6 +86,8 @@ consul_dirs:
 #### `consul_unitfile`
 - systemd unit file
 - default: see [defaults/main.yml](defaults/main.yml)
+#### `skip_handlers`
+- skipt consul restart/reload - useful when building images with packer
 
 ## Tags
 * `config` - update consul unit/service file and sync configuration files

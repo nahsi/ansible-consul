@@ -2,10 +2,10 @@
   service:
     name: consul
     state: restarted
-  when: not lookup("env", "PACKER_BUILD_NAME") | default("")
+  when: not skip_handlers
 
 - name: reload consul
   service:
     name: consul
     state: reloaded
-  when: not lookup("env", "PACKER_BUILD_NAME") | default("")
+  when: not skip_handlers
