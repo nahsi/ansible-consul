@@ -43,16 +43,15 @@
   delegate_to: localhost
   file:
     state: directory
-    path: "/tmp/ansible-consul-{{ ansible_architecture }}"
-  register: _archive_dir
+    path: "{{ _archive_dir }}"
 
 - name: unpack consul
   become: false
-  run_once: true
   delegate_to: localhost
   unarchive:
     src: "{{ role_path }}/files/{{ _archive }}"
-    dest: "{{ _archive_dir.path }}"
+    dest: "{{ _archive_dir }}"
+    creates: "{{ _archive_dir }}/consul"
 
 - name: propagate consul binary
   copy:
@@ -65,10 +64,9 @@
 
 - name: delete archive directory
   become: false
-  run_once: true
   delegate_to: localhost
   file:
-    dest: "{{ _archive_dir.path }}"
+    dest: "{{ _archive_dir }}"
     state: absent
   when: not lookup("env", "MOLECULE_SCENARIO_NAME") | default("")
 
