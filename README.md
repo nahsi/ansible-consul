@@ -5,8 +5,8 @@ from HashiCorp.
 
 ## Role Philosophy
 
-Instead of duplicating every single configuration option as an Ansible variable
-configuration is stored in ansible inventory in yaml format:
+Instead of duplicating every single configuration option as an Ansible variable Consul
+configuration is stored in Ansible inventory in `yaml` format:
 
 ```yml
 consul_config:
