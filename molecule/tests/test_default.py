@@ -55,7 +55,7 @@ def test_service_is_running(host, service):
 
 @pytest.mark.parametrize("domain", [
     "consul",
-    "example",
+    # "example",
     "google.com"
 ])
 def test_dns_resolution(host, domain):
