@@ -145,7 +145,7 @@ consul_dirs:
 - owner of Consul process and files
 - default: `consul`
 
-#### `consul_grop`
+#### `consul_group`
 
 - group of `consul_user`
 - default: `consul`
