@@ -2,6 +2,12 @@
   become: true
   hosts: all
   tasks:
+    - name: install gentoolkit
+      command: "emerge app-portage/gentoolkit"
+      args:
+        creates: "/usr/bin/equery"
+      when: ansible_distribution == "Gentoo"
+
     - name: install dnsmasq
       package:
         name: dnsmasq
