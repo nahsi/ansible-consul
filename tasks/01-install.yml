@@ -55,7 +55,7 @@
 
 - name: propagate consul binary
   copy:
-    src: "{{ _archive_dir.path }}/consul"
+    src: "{{ _archive_dir }}/consul"
     dest: "/usr/bin/consul"
     owner: root
     group: root
