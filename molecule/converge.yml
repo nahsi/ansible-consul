@@ -2,11 +2,11 @@
   become: true
   hosts: all
   vars:
-    consul_version: "1.10.4"
+    consul_version: "1.11.3"
 
     consul_config:
       data_dir: "/var/lib/consul/"
-      bind_addr: !unsafe '{{ GetInterfaceIP "eth1" }}'
+      bind_addr: !unsafe '{{ GetPrivateIP }}'
       enable_local_script_checks: true
       server: true
       bootstrap_expect: 1
