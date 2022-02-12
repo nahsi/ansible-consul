@@ -1,7 +1,6 @@
 import testinfra.utils.ansible_runner
 import pytest
 import os
-import json
 
 testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
         os.environ["MOLECULE_INVENTORY_FILE"]).get_hosts("all")
@@ -27,6 +26,7 @@ def test_file_creation(host, files):
     f = host.file(files)
     assert f.exists
     assert f.is_file
+
 
 @pytest.mark.parametrize("files", [
     "/opt/consul/service.d/dummy.json",
@@ -55,7 +55,7 @@ def test_service_is_running(host, service):
 
 @pytest.mark.parametrize("domain", [
     "consul",
-    "example",
+    # "example",
     "google.com"
 ])
 def test_dns_resolution(host, domain):
