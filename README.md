@@ -174,9 +174,9 @@ consul_dirs:
 
 ## Tags
 
-- `config` - update consul unit/service file and sync configuration files
-- `services` - sync consul services
-- `scripts` - sync consul scripts
+- `config` - update Consul unit/service file and sync configuration files
+- `services` - sync Consul services
+- `scripts` - sync Consul scripts
 
 ## Author
 
