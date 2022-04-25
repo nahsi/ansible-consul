@@ -1,5 +1,5 @@
 ansible==5.6.0
-jmespath==0.10.0
+jmespath==1.0.0
 python-vagrant==1.0.0
 pytest==7.0.1
 pytest-testinfra==6.7.0
