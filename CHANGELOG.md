@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.1.0](https://github.com/nahsi/ansible-consul/compare/v1.0.1...v1.1.0) (2022-04-27)
+
+
+### Features
+
+* Ignore vault agent config on configs sync ([#32](https://github.com/nahsi/ansible-consul/issues/32)) ([f624a45](https://github.com/nahsi/ansible-consul/commit/f624a45fec593fd7c0a94fed7b3b419bbdcbb52e))
+
+
+### Miscellaneous
+
+* bump actions/checkout from 2 to 3 ([#19](https://github.com/nahsi/ansible-consul/issues/19)) ([18f31a4](https://github.com/nahsi/ansible-consul/commit/18f31a4a3de042a254fc275acce899460caac879))
+* bump actions/setup-python from 2 to 3.1.0 ([#24](https://github.com/nahsi/ansible-consul/issues/24)) ([78ce736](https://github.com/nahsi/ansible-consul/commit/78ce7366761b1e9dc812c8090fb7c2591e8bd7cd))
+* bump actions/setup-python from 3.1.0 to 3.1.2 ([#29](https://github.com/nahsi/ansible-consul/issues/29)) ([f634856](https://github.com/nahsi/ansible-consul/commit/f634856a14e1a0ad20c83146cdd093b0afde416f))
+* bump ansible from 5.2.0 to 5.3.0 ([#9](https://github.com/nahsi/ansible-consul/issues/9)) ([ace8813](https://github.com/nahsi/ansible-consul/commit/ace8813660492a55e1910396a77b027da4bea3ef))
+* bump ansible from 5.3.0 to 5.6.0 ([#26](https://github.com/nahsi/ansible-consul/issues/26)) ([d3c5efe](https://github.com/nahsi/ansible-consul/commit/d3c5efeed46be8f0872c7ffe369a154f4cdb9e35))
+* bump jmespath from 0.10.0 to 1.0.0 ([#23](https://github.com/nahsi/ansible-consul/issues/23)) ([af59418](https://github.com/nahsi/ansible-consul/commit/af594185231b6841ef959289da870703c8423e13))
+* bump molecule from 3.5.2 to 3.6.0 ([#11](https://github.com/nahsi/ansible-consul/issues/11)) ([01b9957](https://github.com/nahsi/ansible-consul/commit/01b9957406a9197589686a4d7c3c5d25d244741c))
+* bump molecule from 3.6.0 to 3.6.1 ([#16](https://github.com/nahsi/ansible-consul/issues/16)) ([1fb646f](https://github.com/nahsi/ansible-consul/commit/1fb646f321d1f53d9de2f0afc3e775ad2998542f))
+* bump pytest from 6.2.5 to 7.0.1 ([#13](https://github.com/nahsi/ansible-consul/issues/13)) ([f2155d3](https://github.com/nahsi/ansible-consul/commit/f2155d3f0a821c23774b665d1a837909ae6863cd))
+* bump pytest from 7.0.1 to 7.1.2 ([#28](https://github.com/nahsi/ansible-consul/issues/28)) ([013aa20](https://github.com/nahsi/ansible-consul/commit/013aa20ea9db59b21ba46e6a1a51df95074f616a))
+* bump pytest-testinfra from 6.5.0 to 6.6.0 ([#10](https://github.com/nahsi/ansible-consul/issues/10)) ([efb616b](https://github.com/nahsi/ansible-consul/commit/efb616b8773242a9cbb764e3d6aa454a3b6d28eb))
+* bump pytest-testinfra from 6.6.0 to 6.7.0 ([#27](https://github.com/nahsi/ansible-consul/issues/27)) ([ddb5cea](https://github.com/nahsi/ansible-consul/commit/ddb5ceaf385854e6b36fb38c8429cb600924300e))
+* bump python-vagrant from 0.5.15 to 1.0.0 ([#25](https://github.com/nahsi/ansible-consul/issues/25)) ([9f6229c](https://github.com/nahsi/ansible-consul/commit/9f6229c37a6f898c147d7ffbda58bb94cd06cd1b))
+
 ### [1.0.1](https://github.com/nahsi/ansible-consul/compare/v1.0.0...v1.0.1) (2022-02-12)
 
 
