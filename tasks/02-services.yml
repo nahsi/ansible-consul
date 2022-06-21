@@ -2,6 +2,7 @@
   tags: services
   find:
     paths: "{{ consul_dirs.services.path }}"
+    exclude: "*_vault.json"
     recurse: true
   register: _services_present
 
