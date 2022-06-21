@@ -5,7 +5,7 @@
   when: not skip_handlers
 
 - name: reload consul
-  service:
-    name: consul
-    state: reloaded
+  command: "consul reload"
+  environment:
+    CONSUL_HTTP_TOKEN: "{{ lookup('env', 'CONSUL_HTTP_TOKEN') | default('') }}"
   when: not skip_handlers
