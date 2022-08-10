@@ -22,7 +22,6 @@ consul_config:
   bind_addr: !unsafe '{{ GetInterfaceIP "eth0" }}'
 
   telemetry:
-    disable_compat_1.9: true
     disable_hostname: true
     prometheus_retention_time: "30s"
 

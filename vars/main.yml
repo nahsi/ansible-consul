@@ -5,7 +5,8 @@ _arch_map:
   64-bit: amd64
 _arch: "{{ _arch_map[ansible_architecture] }}"
 
+_checksums: "{{ lookup('url', consul_download_url + '/consul/' + consul_version + '/consul_{{ consul_version }}_SHA256SUMS', wantlist=True) | list }}"
+
 _archive: "consul_{{ consul_version }}_linux_{{ _arch }}.zip"
 _archive_url: "{{ consul_download_url }}/consul/{{ consul_version }}/{{ _archive }}"
-_archive_checksum: "{{ consul_download_url }}/consul/{{ consul_version }}/consul_{{ consul_version }}_SHA256SUMS"
 _archive_dir: "/tmp/{{ _archive | splitext | first }}"
