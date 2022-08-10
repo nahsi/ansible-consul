@@ -46,8 +46,6 @@
 #  enable_local_script_checks: true
 
 #  telemetry:
-#    # Disable compatibility logs
-#    disable_compat_1.9: true
 #    # Enable Prometheus endpoint
 #    prometheus_retention_time: "60s"
 #    disable_hostname: true
