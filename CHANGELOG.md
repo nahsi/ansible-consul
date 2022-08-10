@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/nahsi/ansible-consul/compare/v1.2.0...v1.2.1) (2022-08-10)
+
+
+### Bug Fixes
+
+* Set checksum with preflight task ([#55](https://github.com/nahsi/ansible-consul/issues/55)) ([b8c9387](https://github.com/nahsi/ansible-consul/commit/b8c9387fce9f2e5b4c6b3b6da8e685d884d25832))
+
 ## [1.2.0](https://github.com/nahsi/ansible-consul/compare/v1.1.0...v1.2.0) (2022-06-21)
 
 
