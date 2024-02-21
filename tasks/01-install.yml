@@ -81,23 +81,6 @@
     validate: "consul validate -config-format=json %s"
   notify: restart consul
 
-- name: create consul service file
-  tags: config
-  copy:
-    content: "{{ consul_service }}"
-    dest: "/etc/init.d/consul"
-    owner: root
-    group: root
-    mode: 0755
-  notify: restart consul
-  when: ansible_service_mgr == "openrc"
-
-- name: enable consul
-  service:
-    name: consul
-    enabled: true
-  when: ansible_service_mgr == "openrc"
-
 - name: create consul unit file
   tags: config
   copy:
@@ -107,11 +90,10 @@
     group: root
     mode: 0755
   notify: restart consul
-  when: ansible_service_mgr == "systemd"
 
 - name: enable consul
   systemd:
     name: consul
     enabled: true
     daemon_reload: true
-  when: ansible_service_mgr == "systemd"
+  when: not skip_enable
