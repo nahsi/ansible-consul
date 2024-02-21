@@ -71,16 +71,6 @@
       - consul_scripts is mapping
     quiet: true
 
-- name: check "consul_service" variable
-  tags: always
-  assert:
-    that:
-      - consul_service is defined
-      - consul_service is string
-      - consul_service | length
-    quiet: true
-  when: ansible_service_mgr == "openrc"
-
 - name: check "consul_unit" variable
   tags: always
   assert:
@@ -89,4 +79,3 @@
       - consul_unit is string
       - consul_unit | length
     quiet: true
-  when: ansible_service_mgr == "systemd"
