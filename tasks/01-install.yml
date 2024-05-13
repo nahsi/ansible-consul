@@ -48,6 +48,7 @@
 - name: unpack consul
   become: false
   delegate_to: localhost
+  run_once: true
   unarchive:
     src: "{{ role_path }}/files/{{ _archive }}"
     dest: "{{ _archive_dir }}"
@@ -65,6 +66,7 @@
 - name: delete archive directory
   become: false
   delegate_to: localhost
+  run_once: true
   file:
     dest: "{{ _archive_dir }}"
     state: absent
